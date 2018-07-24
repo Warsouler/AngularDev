@@ -1,3 +1,15 @@
-<p>
-  link3 works!
-</p>
+<!-- String interpolation  Comunicación desde TypeScript a html-->
+<h1>Probando Link 3 con {{myvar}}</h1>
+<h2>{{a+b}}</h2>
+<!-- Property binding Comunicación desde html a TypeScript -->
+<button [disabled]="true">Click me!</button>
+<button [disabled]="listo">Click me2</button>
+<!-- Event binding Comunicación desde html a TypeScript por eventos -->
+<button (click)="hacerAlgo()">Hago algo</button>
+
+<!-- Two way data binding Comunicación bidireccional entre html y TypeScript -->
+<!-- Los corchetes son del property binding y los parentesis del event binding -->
+<input type="text" placeholder="Tu nombre" [(ngModel)]="nombre"/>
+Mi nombre es {{nombre}}
+<input type="text" placeholder="Tu nombre" [(ngModel)]="nombre2"/>
+Mi nombre con segundo nombre es {{nombre+" "+nombre2}}

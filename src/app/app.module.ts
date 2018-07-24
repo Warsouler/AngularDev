@@ -5,10 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
-
-
-
-
 import { AppComponent } from './app.component';
 import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { Link1Component } from './link1/link1.component';
@@ -19,10 +15,6 @@ import { Link3Component } from './link3/link3.component';
   declarations: [
     AppComponent,
     TopNavBarComponent,
-    
-   
-    
-    
     Link1Component,
     Link2Component,
     Link3Component

@@ -1,0 +1,5 @@
+/* Vamos a poner distintos colores en filas pares e impares */
+.numero_par{
+background-color: aliceblue;
+color:blue;
+}

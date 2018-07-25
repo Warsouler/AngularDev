@@ -1,0 +1,18 @@
+<ul> 
+   <!-- dentro del for o de algun contenedor podemos usar la directiva de atributo
+  ngswitch y ponemos el parametro que debe tomar en cada elemento.  -->
+  <ng-container *ngFor="let lugar of lugares; let i=index" [ngSwitch]="lugar.cercania">
+    
+    <li [ngStyle]="{color: (lugar.active) ? 'black' : 'red'}"
+     [ngClass]="{numero_par: (i+1)%2!==0}" >
+      {{lugar.nombre}} -
+      <!-- Luego la directiva ngSwitchCase, que solo funciona en casos de equivalencia
+         de valores le ponemos el la directiva con asterico y la equivalencia. -->
+     <span *ngSwitchCase="1" [ngStyle]="{color:'green'}" > Muy Cercano</span>
+     <span *ngSwitchCase="2" [ngStyle]="{color:'black'}" > Cercano</span>
+     <span *ngSwitchCase="3" [ngStyle]="{color:'red'}" > Lejano</span>
+    </li>
+  </ng-container>
+  
+   
+  </ul>  

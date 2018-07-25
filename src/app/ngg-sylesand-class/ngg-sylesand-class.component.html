@@ -1,0 +1,41 @@
+<ul> <ng-container *ngFor="let lugar of lugares">
+  <!-- en ngStyle es una directiva de atributo por lo tanto va entre los corchetes.
+  Permite determinar un atributo css correspondiente a una variable con un if,
+el estilo css generado lo pone en línea 
+Por lo tanto usamos una directiva de atributo y entre corchetes
+ ponemos el atributo css a modificar y en los 2 puntos ponemos la condicion(opcional) con una ternaria-->
+  <li [ngStyle]="{color: (lugar.active) ? 'black' : 'red'}" >{{lugar.nombre}}</li>
+</ng-container>
+<hr>
+<hr>
+Aca viene ngclass
+<hr>
+<hr>
+<!-- ngclass -->
+<ng-container *ngFor="let lugar of lugares">
+  <!-- podemos usar ngclass para asociar atributos de clase de css poniendola con comillas simples -->
+  <li [ngStyle]="{color: (lugar.active) ? 'black' : 'red'}" [ngClass]="'numero_par'" >{{lugar.nombre}}</li>
+</ng-container>
+
+<hr>
+<hr>
+Aca viene ngclass con pares e impares
+<hr>
+<hr>
+<!-- ngclass -->
+<!-- pero tambien podemos usar con condicionales, que es su fuerte, para esta validación
+podemos tomar el index del ng for con ; let(variable) i = index.
+Luego la validación del ngclass se valida con una condición de parametro -->
+<ng-container *ngFor="let lugar of lugares; let i=index">
+  
+  <li [ngStyle]="{color: (lugar.active) ? 'black' : 'red'}"
+   [ngClass]="{numero_par: (i+1)%2!==0}" >
+    {{lugar.nombre}}
+  </li>
+</ng-container>
+
+
+
+
+
+</ul>  

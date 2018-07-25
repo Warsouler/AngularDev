@@ -1,0 +1,9 @@
+<ul>
+    <!-- Las directivas arrancan con * y tienen camelCase, luego usamos let para cada uno de los objetos lugar en el arreglo lugares -->
+    <!-- No podemos meter dos directivas en la misma etiqueta html por lo tanto usamos un ng-container para contener el for y otro para el if -->
+    
+    <ng-container *ngFor="let lugar of lugares">
+      <li *ngIf="lugar.active" >{{lugar.nombre + " está activo"}}</li>
+      <li *ngIf="!lugar.active" >{{lugar.nombre + " está inactivo"}}</li>
+    </ng-container>
+</ul>

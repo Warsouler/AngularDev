@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,6 +9,8 @@ import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { Link1Component } from './link1/link1.component';
 import { Link2Component } from './link2/link2.component';
 import { Link3Component } from './link3/link3.component';
+import { ForeachComponent } from './foreach/foreach.component';
+import { IffComponent } from './iff/iff.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { Link3Component } from './link3/link3.component';
     TopNavBarComponent,
     Link1Component,
     Link2Component,
-    Link3Component
+    Link3Component,
+    ForeachComponent,
+    IffComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<ul>
+  <li>Floreria la Gardania</li>
+  <li>Donas la pasadita</li>
+  <li>Veterinaria Huellitas Felices</li>
+</ul>
+
+<ul>
+  <!-- Las directivas arrancan con * y tienen camelCase, luego usamos let para cada uno de los objetos lugar en el arreglo lugares -->
+    <li *ngFor="let lugar of lugares">{{lugar.nombre}}</li>
+  </ul>

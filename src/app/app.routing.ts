@@ -6,6 +6,14 @@ import { IffComponent } from './iff/iff.component';
 import { GooglemapsexampleComponent } from './googlemapsexample/googlemapsexample.component';
 import { NggSylesandClassComponent } from './ngg-sylesand-class/ngg-sylesand-class.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
 
 import { Routes } from '@angular/router';
 
@@ -18,4 +26,13 @@ export const appRoutes: Routes = [
 { path: 'linkmaps', component: GooglemapsexampleComponent},
 { path: 'linkngstcl', component: NggSylesandClassComponent},
 { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkdiratr', component: DirattrComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
 ];

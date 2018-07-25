@@ -17,6 +17,8 @@ import { GooglemapsexampleComponent } from './googlemapsexample/googlemapsexampl
 import { AgmCoreModule } from '@agm/core';
 import { NggSylesandClassComponent } from './ngg-sylesand-class/ngg-sylesand-class.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { DirattrComponent } from './dirattr/dirattr.component';
+import { ResaltarDirective } from './directives/resaltar.directive';
 
 
 
@@ -32,6 +34,8 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
     GooglemapsexampleComponent,
     NggSylesandClassComponent,
     NgswitchComponent,
+    DirattrComponent,
+    ResaltarDirective,
   ],
   imports: [
     BrowserModule,

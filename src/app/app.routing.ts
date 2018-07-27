@@ -7,6 +7,18 @@ import { GooglemapsexampleComponent } from './googlemapsexample/googlemapsexampl
 import { NggSylesandClassComponent } from './ngg-sylesand-class/ngg-sylesand-class.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { DirattrComponent } from './dirattr/dirattr.component';
+import { HostlistenersComponent } from './hostlisteners/hostlisteners.component';
+import { HostbindersComponent } from './hostbinders/hostbinders.component';
+import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -27,6 +39,20 @@ export const appRoutes: Routes = [
 { path: 'linkngstcl', component: NggSylesandClassComponent},
 { path: 'linkngsw', component: NgswitchComponent},
 { path: 'linkdiratr', component: DirattrComponent},
+{ path: 'hostlistener', component: HostlistenersComponent},
+{ path: 'Hostbinders', component: HostbindersComponent},
+{ path: 'linkbss', component: BootstrapstylesComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

@@ -19,6 +19,12 @@ import { NggSylesandClassComponent } from './ngg-sylesand-class/ngg-sylesand-cla
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { DirattrComponent } from './dirattr/dirattr.component';
 import { ResaltarDirective } from './directives/resaltar.directive';
+import { HostlistenersComponent } from './hostlisteners/hostlisteners.component';
+import { ContacrClicksDirective } from './directives/contar-clics.directive';
+import { HostbindersComponent } from './hostbinders/hostbinders.component';
+import { ContacrClicks2Directive } from './directives/hostbinder.directive';
+import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.component';
+import { RouterparameterComponent } from './routerparameter/routerparameter.component';
 
 
 
@@ -36,6 +42,13 @@ import { ResaltarDirective } from './directives/resaltar.directive';
     NgswitchComponent,
     DirattrComponent,
     ResaltarDirective,
+    HostlistenersComponent,
+    ContacrClicksDirective,
+    HostbindersComponent,
+    ContacrClicks2Directive,
+    BootstrapstylesComponent,
+    RouterparameterComponent
+
   ],
   imports: [
     BrowserModule,

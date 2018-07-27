@@ -10,11 +10,11 @@
     <h2>Lugares Cercanos</h2>
     <ul class="list-group"> 
       <ng-container *ngFor="let lugar of lugares">
-        <!-- a los items tambien -->
+        <!-- redireccionamos con parametros obligatorios  -->
        <a routerLink="/linkrp2/{{lugar.id}}"> <li *ngIf="lugar.active" class="list-group-item">{{lugar.nombre + " está activo"}}</li></a>
-        <!-- Lo de aqui abajo no funciona porque list-group-item no esta en el css de la pagina del componente -->
-        <!-- <li *ngIf="!lugar.active" [ngClass]="{list-group-item: true" >{{lugar.nombre + " está inactivo"}}</li> -->
-  
+  <!-- redireccionamos además con parametros opcionales de tipo query -->
+  <a routerLink="/linkrp2/{{lugar.id}}" [queryParams]="{action:'view',referer:'yahoo'}"> <li *ngIf="lugar.active" class="list-group-item">{{lugar.nombre + " está activo"}}</li></a>
+
       </ng-container>
   
     </ul> 

@@ -1,3 +1,29 @@
-<p>
-  routerparameter works!
-</p>
+<!-- El mapa y sus bindings  -->
+<agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+  <!-- aplicando bootstrap -->
+  <hr>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    <h2>Lugares Cercanos</h2>
+    <ul class="list-group"> 
+      <ng-container *ngFor="let lugar of lugares">
+        <!-- a los items tambien -->
+       <a routerLink="/linkrp2/{{lugar.id}}"> <li *ngIf="lugar.active" class="list-group-item">{{lugar.nombre + " está activo"}}</li></a>
+        <!-- Lo de aqui abajo no funciona porque list-group-item no esta en el css de la pagina del componente -->
+        <!-- <li *ngIf="!lugar.active" [ngClass]="{list-group-item: true" >{{lugar.nombre + " está inactivo"}}</li> -->
+  
+      </ng-container>
+  
+    </ul> 
+    </div>
+    <div class="col-md-4">
+      <h2>Destacados</h2>
+  
+  
+  
+    </div>
+  </div>
+  </div> 

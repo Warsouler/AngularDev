@@ -10,7 +10,9 @@ import { DirattrComponent } from './dirattr/dirattr.component';
 import { HostlistenersComponent } from './hostlisteners/hostlisteners.component';
 import { HostbindersComponent } from './hostbinders/hostbinders.component';
 import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { RouterparameterComponent } from './routerparameter/routerparameter.component';
+import { Routerparameter2Component } from './routerparameter2/routerparameter2.component';
+
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -28,6 +30,7 @@ import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.comp
 // import { DirattrComponent } from './dirattr/dirattr.component';
 
 import { Routes } from '@angular/router';
+import { makeParamDecorator } from '../../node_modules/@angular/core/src/util/decorators';
 
 export const appRoutes: Routes = [
 { path: 'link1', component: Link1Component},
@@ -42,7 +45,10 @@ export const appRoutes: Routes = [
 { path: 'hostlistener', component: HostlistenersComponent},
 { path: 'Hostbinders', component: HostbindersComponent},
 { path: 'linkbss', component: BootstrapstylesComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+// cuando queremos pasar parametros por ruta se pone : y el nombre del parametro, si queremos mas de 1 seguimos con /:parametro y asi sucesivamente
+// ej: linkrp/:id/:name
+{ path: 'linkrp/:id', component: RouterparameterComponent},
+{ path: 'linkrp2/:id', component: Routerparameter2Component},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

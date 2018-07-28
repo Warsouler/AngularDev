@@ -26,6 +26,7 @@ import { ContacrClicks2Directive } from './directives/hostbinder.directive';
 import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.component';
 import { RouterparameterComponent } from './routerparameter/routerparameter.component';
 import { Routerparameter2Component } from './routerparameter2/routerparameter2.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 
@@ -49,7 +50,8 @@ import { Routerparameter2Component } from './routerparameter2/routerparameter2.c
     ContacrClicks2Directive,
     BootstrapstylesComponent,
     RouterparameterComponent,
-    Routerparameter2Component
+    Routerparameter2Component,
+    ContactoComponent
 
   ],
   imports: [

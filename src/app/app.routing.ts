@@ -12,7 +12,7 @@ import { HostbindersComponent } from './hostbinders/hostbinders.component';
 import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.component';
 import { RouterparameterComponent } from './routerparameter/routerparameter.component';
 import { Routerparameter2Component } from './routerparameter2/routerparameter2.component';
-
+import { ContactoComponent } from './contacto/contacto.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -49,7 +49,7 @@ export const appRoutes: Routes = [
 // ej: linkrp/:id/:name
 { path: 'linkrp/:id', component: RouterparameterComponent},
 { path: 'linkrp2/:id', component: Routerparameter2Component},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkcontacto', component: ContactoComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

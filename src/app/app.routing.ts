@@ -13,7 +13,7 @@ import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.comp
 import { RouterparameterComponent } from './routerparameter/routerparameter.component';
 import { Routerparameter2Component } from './routerparameter2/routerparameter2.component';
 import { ContactoComponent } from './contacto/contacto.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { TestserviceComponent } from './testservice/testservice.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -50,6 +50,8 @@ export const appRoutes: Routes = [
 { path: 'linkrp/:id', component: RouterparameterComponent},
 { path: 'linkrp2/:id', component: Routerparameter2Component},
 { path: 'linkcontacto', component: ContactoComponent},
+{ path: 'linktestservice', component: TestserviceComponent},
+
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

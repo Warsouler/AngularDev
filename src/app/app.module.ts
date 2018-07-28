@@ -27,6 +27,8 @@ import { BootstrapstylesComponent } from './bootstrapstyles/bootstrapstyles.comp
 import { RouterparameterComponent } from './routerparameter/routerparameter.component';
 import { Routerparameter2Component } from './routerparameter2/routerparameter2.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { TestserviceComponent } from './testservice/testservice.component';
+import { LugaresService } from './services/lugares.service';
 
 
 
@@ -51,7 +53,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     BootstrapstylesComponent,
     RouterparameterComponent,
     Routerparameter2Component,
-    ContactoComponent
+    ContactoComponent,
+    TestserviceComponent
 
   ],
   imports: [
@@ -64,7 +67,8 @@ import { ContactoComponent } from './contacto/contacto.component';
       apiKey:'AIzaSyDKv4v3baFljI_9SpXrVwanhrjNRirNw9o',
     }),
   ],
-  providers: [],
+  // Aca en providers ponemos los servicios
+  providers: [LugaresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

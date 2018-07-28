@@ -1,0 +1,26 @@
+<div class="container">
+  <label for="">Nombre</label>
+  <!-- Los atributos que van a tomar los lugares con binding de dos vias -->
+    <input type="text" class="form-control" [(ngModel)]="lugar.nombre"/>
+    <br> 
+    <label for="">Distancia</label>
+    <input type="number" class="form-control" [(ngModel)]="lugar.distancia"/>
+    <br> 
+    <label for="">Cercania</label>
+    <input type="number" class="form-control" [(ngModel)]="lugar.cercania"/>
+    <br> 
+    <label for="">Descripción</label>
+    <textarea name="" id="" cols="30" rows="10" class="form-control" [(ngModel)]="lugar.descripcion"></textarea>    
+    <label for="">Plan</label>
+    <input type="text" class="form-control" [(ngModel)]="lugar.plan"/>
+    <br> 
+
+
+
+
+    <hr>
+    <!-- Al hacer click llamamos a la función guardarLugar -->
+    <a class="btn btn-primary" style="color:white" (click)="guardarLugar()">Enviar</a>
+    <a class="btn btn-danger" routerLink="/linkbss">Cancelar</a>
+ </div>
+

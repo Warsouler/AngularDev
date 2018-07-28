@@ -29,6 +29,29 @@ import { Routerparameter2Component } from './routerparameter2/routerparameter2.c
 import { ContactoComponent } from './contacto/contacto.component';
 import { TestserviceComponent } from './testservice/testservice.component';
 import { LugaresService } from './services/lugares.service';
+import { FirebaseComponent } from './firebase/firebase.component';
+
+
+// Una vez instalado angularfirebase para angular 4+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+// Constante de firebase la configuracion seria
+export const firebaseConfig = {
+  // apiKey: "xxxxxxxxxx",
+  // authDomain: "your-domain-name.firebaseapp.com",
+  // databaseURL: "https://your-domain-name.firebaseio.com",
+  // storageBucket: "your-domain-name.appspot.com",
+  // messagingSenderId: '<your-messaging-sender-id>'
+  apiKey: "AIzaSyARuuwIsIfsZ6uYBcXSDBVIzeiSMz59Y0Y",
+  authDomain: "platziangular-e62c4.firebaseapp.com",
+  databaseURL: "https://platziangular-e62c4.firebaseio.com",
+  // projectId: "platziangular-e62c4",
+  storageBucket: "platziangular-e62c4.appspot.com",
+  messagingSenderId: "267628503085"
+
+};
 
 
 
@@ -54,7 +77,8 @@ import { LugaresService } from './services/lugares.service';
     RouterparameterComponent,
     Routerparameter2Component,
     ContactoComponent,
-    TestserviceComponent
+    TestserviceComponent,
+    FirebaseComponent
 
   ],
   imports: [
@@ -66,6 +90,13 @@ import { LugaresService } from './services/lugares.service';
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyDKv4v3baFljI_9SpXrVwanhrjNRirNw9o',
     }),
+
+    // Inicializamos angularFireBase con la constante firebaseconfig
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+
+
   ],
   // Aca en providers ponemos los servicios
   providers: [LugaresService],

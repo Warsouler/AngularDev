@@ -14,7 +14,7 @@ import { RouterparameterComponent } from './routerparameter/routerparameter.comp
 import { Routerparameter2Component } from './routerparameter2/routerparameter2.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { TestserviceComponent } from './testservice/testservice.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { FirebaseComponent } from './firebase/firebase.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -51,6 +51,7 @@ export const appRoutes: Routes = [
 { path: 'linkrp2/:id', component: Routerparameter2Component},
 { path: 'linkcontacto', component: ContactoComponent},
 { path: 'linktestservice', component: TestserviceComponent},
+{ path: 'linkfirebase', component: FirebaseComponent},
 
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

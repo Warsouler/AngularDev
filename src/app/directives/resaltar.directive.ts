@@ -1,5 +1,5 @@
-import { Directive, OnInit, ElementRef, Renderer2, Input } from "../../../node_modules/@angular/core";
-import { ClassGetter } from "../../../node_modules/@angular/compiler/src/output/output_ast";
+import { Directive, OnInit, ElementRef, Renderer2, Input } from "@angular/core";
+import { ClassGetter } from "@angular/compiler/src/output/output_ast";
 
 //Declaramos la directiva con un decorador del typescript.
 @Directive({

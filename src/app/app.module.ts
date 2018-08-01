@@ -36,6 +36,8 @@ import { FirebaseComponent } from './firebase/firebase.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { CoordsComponent } from './coords/coords.component';
+import { CoordService } from './services/coord.service';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -78,7 +80,8 @@ export const firebaseConfig = {
     Routerparameter2Component,
     ContactoComponent,
     TestserviceComponent,
-    FirebaseComponent
+    FirebaseComponent,
+    CoordsComponent
 
   ],
   imports: [
@@ -99,7 +102,7 @@ export const firebaseConfig = {
 
   ],
   // Aca en providers ponemos los servicios
-  providers: [LugaresService],
+  providers: [LugaresService,CoordService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

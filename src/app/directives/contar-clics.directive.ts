@@ -1,4 +1,4 @@
-import { Directive, HostListener } from "../../../node_modules/@angular/core";
+import { Directive, HostListener } from "@angular/core";
 
 @Directive({
     // ponemos a antes para que solo aplique para etiquetas a hypervinculos

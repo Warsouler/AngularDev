@@ -15,7 +15,7 @@ import { Routerparameter2Component } from './routerparameter2/routerparameter2.c
 import { ContactoComponent } from './contacto/contacto.component';
 import { TestserviceComponent } from './testservice/testservice.component';
 import { FirebaseComponent } from './firebase/firebase.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { CoordsComponent } from './coords/coords.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -30,7 +30,7 @@ import { FirebaseComponent } from './firebase/firebase.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 
 import { Routes } from '@angular/router';
-import { makeParamDecorator } from '../../node_modules/@angular/core/src/util/decorators';
+import { makeParamDecorator } from '@angular/core/src/util/decorators';
 
 export const appRoutes: Routes = [
 { path: 'link1', component: Link1Component},
@@ -52,6 +52,7 @@ export const appRoutes: Routes = [
 { path: 'linkcontacto', component: ContactoComponent},
 { path: 'linktestservice', component: TestserviceComponent},
 { path: 'linkfirebase', component: FirebaseComponent},
+{ path: 'linkcoords', component: CoordsComponent},
 
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

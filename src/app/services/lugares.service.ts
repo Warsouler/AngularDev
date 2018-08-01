@@ -1,5 +1,5 @@
-import { Injectable } from "../../../node_modules/@angular/core";
-import { AngularFireDatabase } from "../../../node_modules/angularfire2/database";
+import { Injectable } from "@angular/core";
+import { AngularFireDatabase } from "angularfire2/database";
 // El inyectable sirve para que pueda ser inyectado desde cualquier otro lado de angular
 // Los servicios sirven para ser inyectados y reutilizados en varios componentens de angular
 @Injectable()
@@ -29,6 +29,15 @@ export class LugaresService{
       public guardarLugar(lugar)
       {
         //   Aca decimos a la base de datos de firebase que se refiera a la tabla lugares con el id 1 uno que guarde lugares
-        this.afdb.database.ref('lugares/1').set(lugar);
+        // this.afdb.database.ref('lugares/1').set(lugar);
+
+        // Ahora queremos que guarde con un id autonumerico
+        this.afdb.database.ref('lugares/'+lugar.id).set(lugar);
+
+        
+      }
+
+      public getLugaresFire(){
+        return this.afdb.list("lugares");
       }
 }

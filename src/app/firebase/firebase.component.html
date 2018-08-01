@@ -22,5 +22,20 @@
     <!-- Al hacer click llamamos a la función guardarLugar -->
     <a class="btn btn-primary" style="color:white" (click)="guardarLugar()">Enviar</a>
     <a class="btn btn-danger" routerLink="/linkbss">Cancelar</a>
+
+
+
+
+    <!-- Lista de lugares -->
+    <ul> 
+
+      <ng-container *ngFor="let lugar of lugares;">
+         <li>
+          {{lugar.nombre}}
+        </li>
+      
+      </ng-container>
+      </ul>  
+
  </div>
 

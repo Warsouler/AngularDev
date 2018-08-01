@@ -1,0 +1,12 @@
+<!-- El mapa y sus bindings  -->
+<!-- aqui en agm-map inicializamos y ponemos la lat y el lng de donde queremos que empieze la vista del mapa -->
+<agm-map [latitude]="lat" [longitude]="lng">
+  <!-- para poder meter marcadores podemos meter un ngFor dentro del agm-marker -->
+    <agm-marker *ngFor="let mk of markmaps"
+     [latitude]="mk.lat" [longitude]="mk.lng">
+
+
+
+    </agm-marker>
+  </agm-map>
+

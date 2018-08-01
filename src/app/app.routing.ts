@@ -17,7 +17,7 @@ import { TestserviceComponent } from './testservice/testservice.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { CoordsComponent } from './coords/coords.component';
 import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugares.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { MarkermapComponent } from './markermap/markermap.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -57,7 +57,7 @@ export const appRoutes: Routes = [
 
 { path: 'linklul', component: ListupdatelugaresComponent},
 { path: 'linkul/:id', component: UpdatelugaresComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkmkc', component: MarkermapComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

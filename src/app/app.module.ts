@@ -38,6 +38,8 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { CoordsComponent } from './coords/coords.component';
 import { CoordService } from './services/coord.service';
+import { UpdatelugaresComponent } from './updatelugares/updatelugares.component';
+import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugares.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -81,7 +83,9 @@ export const firebaseConfig = {
     ContactoComponent,
     TestserviceComponent,
     FirebaseComponent,
-    CoordsComponent
+    CoordsComponent,
+    UpdatelugaresComponent,
+    ListupdatelugaresComponent
 
   ],
   imports: [

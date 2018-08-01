@@ -16,7 +16,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { TestserviceComponent } from './testservice/testservice.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { CoordsComponent } from './coords/coords.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugares.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -31,6 +31,7 @@ import { CoordsComponent } from './coords/coords.component';
 
 import { Routes } from '@angular/router';
 import { makeParamDecorator } from '@angular/core/src/util/decorators';
+import { UpdatelugaresComponent } from './updatelugares/updatelugares.component';
 
 export const appRoutes: Routes = [
 { path: 'link1', component: Link1Component},
@@ -54,8 +55,8 @@ export const appRoutes: Routes = [
 { path: 'linkfirebase', component: FirebaseComponent},
 { path: 'linkcoords', component: CoordsComponent},
 
-// { path: 'linkngsw', component: NgswitchComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linklul', component: ListupdatelugaresComponent},
+{ path: 'linkul/:id', component: UpdatelugaresComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

@@ -1,0 +1,26 @@
+<!-- Lista de lugares -->
+<div class="container">
+
+
+  <ul> 
+
+    <ng-container *ngFor="let lugar of lugares;">
+       <li>
+       <div class="row">
+         <div class="col-xs-6">
+            {{lugar.nombre}}
+         </div>
+         <div class="col-xs-6">
+           <a class="btn btn-primary" routerLink="/linkul/{{lugar.id}}">Editar</a>   
+          
+         </div>
+        
+      </div>
+      </li>
+    
+    </ng-container>
+    </ul>  
+
+
+
+</div>

@@ -40,4 +40,21 @@ export class LugaresService{
       public getLugaresFire(){
         return this.afdb.list("lugares");
       }
+
+      public buscarLugar(id)
+      {
+        // Asi buscamos 1 solo lugar pero dara error en la suscripcion del component ya que no se puede suscribir a una referencia
+        // return this.afdb.database.ref('lugares/'+id);
+
+        // Asi buscamos 1 solo lugar con referencia a objeto
+        return this.afdb.object('lugares/'+id);
+      }
+
+      public modificarLugar(lugar)
+      {
+        // Ahora queremos que guarde con un id fijo
+        this.afdb.database.ref('lugares/'+lugar.id).set(lugar);
+
+        
+      }
 }

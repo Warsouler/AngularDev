@@ -41,6 +41,7 @@ import { CoordService } from './services/coord.service';
 import { UpdatelugaresComponent } from './updatelugares/updatelugares.component';
 import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugares.component';
 import { MarkermapComponent } from './markermap/markermap.component';
+import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -87,7 +88,8 @@ export const firebaseConfig = {
     CoordsComponent,
     UpdatelugaresComponent,
     ListupdatelugaresComponent,
-    MarkermapComponent
+    MarkermapComponent,
+    PosthttpfirebaseComponent
 
   ],
   imports: [

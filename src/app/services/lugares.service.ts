@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { AngularFireDatabase } from "angularfire2/database";
+import { Http, Headers } from "@angular/http";
 // El inyectable sirve para que pueda ser inyectado desde cualquier otro lado de angular
 // Los servicios sirven para ser inyectados y reutilizados en varios componentens de angular
 @Injectable()
@@ -57,4 +58,8 @@ export class LugaresService{
 
         
       }
+
+
+
+
 }

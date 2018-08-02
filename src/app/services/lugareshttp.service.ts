@@ -18,8 +18,14 @@ export class LugareshttpService {
   API_ENDPOINT="https://platziangular-e62c4.firebaseio.com";
   public guardarLugarHttp(lugar)
   {
-    debugger;
       const headers=new Headers({"Content-Type":"application/json"});
       return this.http.post(this.API_ENDPOINT+'/lugares.json',lugar,{headers:headers}).subscribe();
   }
+  
+  public buscarLugaresHttp()
+  {
+    return this.http.get(this.API_ENDPOINT+'/lugares.json');
+      
+  }
+  
 }

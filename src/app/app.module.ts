@@ -42,6 +42,7 @@ import { UpdatelugaresComponent } from './updatelugares/updatelugares.component'
 import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugares.component';
 import { MarkermapComponent } from './markermap/markermap.component';
 import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.component';
+import { MaptypescComponent } from './maptypesc/maptypesc.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -89,7 +90,8 @@ export const firebaseConfig = {
     UpdatelugaresComponent,
     ListupdatelugaresComponent,
     MarkermapComponent,
-    PosthttpfirebaseComponent
+    PosthttpfirebaseComponent,
+    MaptypescComponent
 
   ],
   imports: [

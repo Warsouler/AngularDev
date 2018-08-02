@@ -19,6 +19,14 @@ import { CoordsComponent } from './coords/coords.component';
 import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugares.component';
 import { MarkermapComponent } from './markermap/markermap.component';
 import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.component';
+import { MaptypescComponent } from './maptypesc/maptypesc.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
+// import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -59,6 +67,30 @@ export const appRoutes: Routes = [
 { path: 'linkul/:id', component: UpdatelugaresComponent},
 { path: 'linkmkc', component: MarkermapComponent},
 { path: 'linkpfb', component: PosthttpfirebaseComponent},
+{ path: 'linkmtc', component: MaptypescComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
+// { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

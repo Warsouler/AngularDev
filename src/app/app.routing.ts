@@ -20,7 +20,7 @@ import { ListupdatelugaresComponent } from './listupdatelugares/listupdatelugare
 import { MarkermapComponent } from './markermap/markermap.component';
 import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.component';
 import { MaptypescComponent } from './maptypesc/maptypesc.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { PipesComponent } from './pipes/pipes.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -68,7 +68,7 @@ export const appRoutes: Routes = [
 { path: 'linkmkc', component: MarkermapComponent},
 { path: 'linkpfb', component: PosthttpfirebaseComponent},
 { path: 'linkmtc', component: MaptypescComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkpc', component: PipesComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

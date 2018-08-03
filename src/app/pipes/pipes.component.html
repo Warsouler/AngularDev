@@ -1,0 +1,10 @@
+<ul>
+<!-- para los pipes usamos el operador pipe (or simple) seguido de la directiva del pipe -->
+      <li *ngFor="let lugar of lugares">{{lugar.nombre | lowercase}}</li>
+      <li *ngFor="let lugar of lugares">{{lugar.nombre | uppercase}}</li>
+      <small>Creado sin pipe: {{fecha}}</small>
+      <br>
+      <small>Creado con pipe: {{fecha | date}}</small>
+      <br>
+      <small>Creado con pipe concatenados: {{fecha | date | uppercase}}</small>
+    </ul>

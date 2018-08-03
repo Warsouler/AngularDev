@@ -10,7 +10,7 @@ export class MaptypescComponent implements OnInit {
 
   constructor(private lugarService:MaptypeserviceService) {
     this.verLugares();
-
+    this.verLugaresError();
    }
    lugares=null;
   verLugares()
@@ -20,6 +20,19 @@ export class MaptypescComponent implements OnInit {
         this.lugares=lugares;
         var me =this;
         this.lugares = Object.keys(this.lugares).map(function (key) { return me.lugares[key]; });
+      },
+    );
+  }
+  errormsg:string="";
+  verLugaresError()
+  {  
+      this.lugarService.buscarLugaresHttpMapError().subscribe(lugares=>{
+        this.lugares=lugares;
+        var me =this;
+        this.lugares = Object.keys(this.lugares).map(function (key) { return me.lugares[key]; });
+      },
+       error=> {
+        this.errormsg="Ocurrió un error, Error: "+error;
       }
     );
   }

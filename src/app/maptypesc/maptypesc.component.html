@@ -8,3 +8,9 @@
   
   </ng-container>
   </ul>  
+ 
+  <!-- <div *ngIf="iserror" class="alert alert-danger" role="alert" id="errormsg"> -->
+    <div *ngIf="errormsg!=''" class="alert alert-danger" role="alert">
+    {{errormsg}}
+    </div>
+  

@@ -30,4 +30,17 @@ export class MaptypeserviceService {
     }))
       
   }
+
+  public buscarLugaresHttpMapError()
+  {
+    // aqui devolvemos en vez de un resultado de una tabla podemos devolver toda la info y mapearla
+    // para esto usamos que traiga cualquier json, despues usamos un pipe que dentro usamos la funcion map
+    // tomamos una proyección anonima declaramos la constante data y mapeando el resultado lo hacemos json
+    // y de este solo queremos retornar los lugares
+    return this.http.get(this.API_ENDPOINT+'/.js').pipe(map((resultado)=>{
+      const data= resultado.json().lugares;
+      return data;
+    }))
+      
+  }
 }

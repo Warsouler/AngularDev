@@ -21,7 +21,7 @@ import { MarkermapComponent } from './markermap/markermap.component';
 import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.component';
 import { MaptypescComponent } from './maptypesc/maptypesc.component';
 import { PipesComponent } from './pipes/pipes.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { OwnpipeComponent } from './ownpipe/ownpipe.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -69,7 +69,7 @@ export const appRoutes: Routes = [
 { path: 'linkpfb', component: PosthttpfirebaseComponent},
 { path: 'linkmtc', component: MaptypescComponent},
 { path: 'linkpc', component: PipesComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkoc', component: OwnpipeComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

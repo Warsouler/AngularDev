@@ -44,6 +44,9 @@ import { MarkermapComponent } from './markermap/markermap.component';
 import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.component';
 import { MaptypescComponent } from './maptypesc/maptypesc.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { OwnpipeComponent } from './ownpipe/ownpipe.component';
+// automaticamente importa el pipe
+import { LinkifystrPipe } from './mypipes/linkifystr.pipe';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -93,7 +96,10 @@ export const firebaseConfig = {
     MarkermapComponent,
     PosthttpfirebaseComponent,
     MaptypescComponent,
-    PipesComponent
+    PipesComponent,
+    OwnpipeComponent,
+    // declaramos nuestro papi para poder ser usado
+    LinkifystrPipe
 
   ],
   imports: [

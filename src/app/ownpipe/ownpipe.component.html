@@ -1,0 +1,12 @@
+<ul>
+  <!-- para los pipes usamos el operador pipe (or simple) seguido de la directiva del pipe -->
+        <li *ngFor="let lugar of lugares">
+          <h3>{{lugar.nombre}}</h3>
+          <!-- Asi solo se incrustará el href -->
+          <p>{{lugar.descripcion | linkifystr}}</p>
+<!-- Usando la directiva innerHtml dejara de tomar el string interpolation como puro html con formato
+y lo tomara como sin formato y lo interpretará -->
+          <p [innerHtml]="lugar.descripcion | linkifystr"></p>
+        </li>
+
+</ul>

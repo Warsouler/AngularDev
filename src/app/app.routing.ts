@@ -22,7 +22,7 @@ import { PosthttpfirebaseComponent } from './posthttpfirebase/posthttpfirebase.c
 import { MaptypescComponent } from './maptypesc/maptypesc.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { OwnpipeComponent } from './ownpipe/ownpipe.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { AnimationsComponent } from './animations/animations.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -70,7 +70,7 @@ export const appRoutes: Routes = [
 { path: 'linkmtc', component: MaptypescComponent},
 { path: 'linkpc', component: PipesComponent},
 { path: 'linkoc', component: OwnpipeComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkanim', component: AnimationsComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

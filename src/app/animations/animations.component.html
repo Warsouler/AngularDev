@@ -1,0 +1,11 @@
+<!-- declaramos un div llamado cuadrado y le ponemos con una directiva el trigger con @nombredeltrigger
+igualandoselo a la variable que posee el estado actual osea el parametro del trigger para saber que 
+estilo poner o que animar depende del atributo estado -->
+<div id="cuadrado" [@ContenedorAnimable]="state"></div>
+<div id="cuadrado2" [@ContenedorAnimable]="state2"></div>
+<!-- esta va a tener la transición si es que queremos usar transiciones -->
+<div id="cuadradoanimacion" [@ContenedorAnimable]="state3"></div>
+
+
+<!-- creamos un boton para animar el cuadrado, y al hacer click llamamos a la función -->
+<a class="btn btn-default" (click)="animar()">Animar!</a>

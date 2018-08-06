@@ -47,6 +47,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { OwnpipeComponent } from './ownpipe/ownpipe.component';
 // automaticamente importa el pipe
 import { LinkifystrPipe } from './mypipes/linkifystr.pipe';
+import { AnimationsComponent } from './animations/animations.component';
+// importamos el modulo para las animaciones
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -99,7 +102,8 @@ export const firebaseConfig = {
     PipesComponent,
     OwnpipeComponent,
     // declaramos nuestro papi para poder ser usado
-    LinkifystrPipe
+    LinkifystrPipe,
+    AnimationsComponent
 
   ],
   imports: [
@@ -116,6 +120,8 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    // declaramos el modulo para las animaciones
+    BrowserAnimationsModule
 
 
   ],

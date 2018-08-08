@@ -36,6 +36,9 @@ export class AnimationsComponent implements OnInit {
  state:string="inicial";
  state2:string="final";
  state3:string="inicial";
+ state4:string="inicial";
+
+ first:boolean=true;
   constructor() { }
 
   ngOnInit() {
@@ -43,6 +46,26 @@ export class AnimationsComponent implements OnInit {
 // declaramos la funcion animar
   animar(){
     this.state3=(this.state3==='final')?'inicial':'final';
+  }
+
+  animar2(){
+    this.state4=(this.state4==='final')?'inicial':'final';
+  }
+
+  animacionInicia(e)
+  {
+    if(!this.first)
+    alert("Iniciado");
+  }
+  animacionTermina(e)
+  { if(!this.first)
+    {
+    alert("Terminado");
+    
+    }
+    else{
+      this.first=false;
+    }
   }
 
 }

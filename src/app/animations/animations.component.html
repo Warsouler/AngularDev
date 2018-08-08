@@ -9,3 +9,15 @@ estilo poner o que animar depende del atributo estado -->
 
 <!-- creamos un boton para animar el cuadrado, y al hacer click llamamos a la función -->
 <a class="btn btn-default" (click)="animar()">Animar!</a>
+
+
+
+<!-- Acá usamos funciones callback para ver como conectar la devolución en este elemento usando start o done (cuando arranca o cuando termina cada funcion)
+    por ejemplo nosotros vamos a declarar una para cada evento (cuando empieza un evento y su correspondiente funcion callback y cuando termina y su
+    correspondiente función callback) . Como es una llamada a una función, aunque sea callback,
+ se pone entre parentesis como si fuera el (click) y se pone la directiva y el momento (start o done) y seguido la función que invoca el callback,
+ que generalmente se le manda el evento como argumento -->
+<div id="cuadradoanimacioncallback" [@ContenedorAnimable]="state4" (@ContenedorAnimable.start)="animacionInicia($event)"
+ (@ContenedorAnimable.done)="animacionTermina($event)"></div>
+
+<a class="btn btn-default" (click)="animar2()">Callback!</a>

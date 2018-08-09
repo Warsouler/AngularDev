@@ -23,8 +23,8 @@ import { MaptypescComponent } from './maptypesc/maptypesc.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { OwnpipeComponent } from './ownpipe/ownpipe.component';
 import { AnimationsComponent } from './animations/animations.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -71,8 +71,8 @@ export const appRoutes: Routes = [
 { path: 'linkpc', component: PipesComponent},
 { path: 'linkoc', component: OwnpipeComponent},
 { path: 'linkanim', component: AnimationsComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linklogin', component: LoginComponent},
+{ path: 'linkreg', component: RegisterComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

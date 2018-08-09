@@ -50,6 +50,9 @@ import { LinkifystrPipe } from './mypipes/linkifystr.pipe';
 import { AnimationsComponent } from './animations/animations.component';
 // importamos el modulo para las animaciones
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { AuthorizationService } from './services/authorization.service';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -101,9 +104,11 @@ export const firebaseConfig = {
     MaptypescComponent,
     PipesComponent,
     OwnpipeComponent,
-    // declaramos nuestro papi para poder ser usado
+    // declaramos nuestro pipe para poder ser usado
     LinkifystrPipe,
-    AnimationsComponent
+    AnimationsComponent,
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [
@@ -126,7 +131,7 @@ export const firebaseConfig = {
 
   ],
   // Aca en providers ponemos los servicios
-  providers: [LugaresService,CoordService],
+  providers: [LugaresService,CoordService,AuthorizationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

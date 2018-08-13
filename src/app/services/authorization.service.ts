@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { EmailValidator } from '../../../node_modules/@angular/forms';
 import { AngularFireAuth } from '../../../node_modules/angularfire2/auth';
+import { Router } from '../../../node_modules/@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthorizationService {
 
-  constructor(private angularFireAuth:AngularFireAuth) 
+  constructor(private angularFireAuth:AngularFireAuth, private router:Router) 
   { 
 
 
@@ -38,7 +39,7 @@ export class AuthorizationService {
       alert("Ha ocurrido un error");
       console.log(error);
     })
-  }
+  };
   // recordar ir a firebase y habilitar desde Authentification, el proveedor de acceso de correo y contraseña
   public register=(email,password) => {
     this.angularFireAuth.auth.createUserWithEmailAndPassword(email,password).then((response)=>{
@@ -49,5 +50,17 @@ export class AuthorizationService {
       alert("Ha ocurrido un error");
       console.log(error);
     })
+  };
+
+  // esto devuelve si está logueado
+  public isLogged(){
+    return this.angularFireAuth.authState;
+  };
+
+  // esto es para hacer logout a fireauth
+  public logout(){
+    this.angularFireAuth.auth.signOut();
+    this.router.navigate(['lugares']);
   }
+
 }

@@ -53,6 +53,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthorizationService } from './services/authorization.service';
+import { PathauthComponent } from './pathauth/pathauth.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -108,7 +109,8 @@ export const firebaseConfig = {
     LinkifystrPipe,
     AnimationsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PathauthComponent
 
   ],
   imports: [

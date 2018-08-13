@@ -25,7 +25,7 @@ import { OwnpipeComponent } from './ownpipe/ownpipe.component';
 import { AnimationsComponent } from './animations/animations.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { PathauthComponent } from './pathauth/pathauth.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -73,7 +73,7 @@ export const appRoutes: Routes = [
 { path: 'linkanim', component: AnimationsComponent},
 { path: 'linklogin', component: LoginComponent},
 { path: 'linkreg', component: RegisterComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkpathauth', component: PathauthComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

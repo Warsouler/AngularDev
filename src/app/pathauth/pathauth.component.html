@@ -2,5 +2,5 @@
   <li *ngIf="loggedIn">Estoy logueado</li>
   
   <li *ngIf="!loggedIn">No estoy logueado</li>
-  <a href="" *ngIf="loggedIn" (click)="logout()">Desloguearse</a>
+  <a *ngIf="loggedIn" (click)="logout()">Desloguearse</a>
 </ul>

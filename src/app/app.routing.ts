@@ -26,7 +26,7 @@ import { AnimationsComponent } from './animations/animations.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PathauthComponent } from './pathauth/pathauth.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -40,6 +40,7 @@ import { PathauthComponent } from './pathauth/pathauth.component';
 import { Routes } from '@angular/router';
 import { makeParamDecorator } from '@angular/core/src/util/decorators';
 import { UpdatelugaresComponent } from './updatelugares/updatelugares.component';
+import { MyGuardService } from './services/my-guard.service';
 
 export const appRoutes: Routes = [
 { path: 'link1', component: Link1Component},
@@ -74,7 +75,9 @@ export const appRoutes: Routes = [
 { path: 'linklogin', component: LoginComponent},
 { path: 'linkreg', component: RegisterComponent},
 { path: 'linkpathauth', component: PathauthComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+// ademas del componente acá ponemos el guard con canActivate, que no dejara pasar a los no logueados
+// y tampoco auque estes logueado si queres acceder por ruta.
+{ path: 'linkolpc', component: OnlyloggedpathComponent,canActivate:[MyGuardService]},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

@@ -54,6 +54,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthorizationService } from './services/authorization.service';
 import { PathauthComponent } from './pathauth/pathauth.component';
+import { MyGuardService } from './services/my-guard.service';
+import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -110,7 +112,8 @@ export const firebaseConfig = {
     AnimationsComponent,
     LoginComponent,
     RegisterComponent,
-    PathauthComponent
+    PathauthComponent,
+    OnlyloggedpathComponent
 
   ],
   imports: [
@@ -133,7 +136,7 @@ export const firebaseConfig = {
 
   ],
   // Aca en providers ponemos los servicios
-  providers: [LugaresService,CoordService,AuthorizationService],
+  providers: [LugaresService,CoordService,AuthorizationService,MyGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

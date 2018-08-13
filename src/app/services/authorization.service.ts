@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { EmailValidator } from '../../../node_modules/@angular/forms';
-import { AngularFireAuth } from '../../../node_modules/angularfire2/auth';
-import { Router } from '../../../node_modules/@angular/router';
+import { EmailValidator } from '@angular/forms';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -60,7 +60,7 @@ export class AuthorizationService {
   // esto es para hacer logout a fireauth
   public logout(){
     this.angularFireAuth.auth.signOut();
-    this.router.navigate(['lugares']);
+    this.router.navigate(['linkiff']);
   }
 
 }

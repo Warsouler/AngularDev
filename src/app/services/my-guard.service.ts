@@ -11,7 +11,6 @@ export class MyGuardService implements CanActivate {
 
   loggedIn=false;
   constructor(private authorizationService:AuthorizationService) {
-    debugger;
     // vamos al authorization service y nos sucribimos para ver si está logueado, sino por seguridad le ponemos false
     // y si si, vemos si viene algun resultado y si viene es que está logueado.
     this.authorizationService.isLogged().subscribe((result)=>
@@ -35,7 +34,6 @@ export class MyGuardService implements CanActivate {
     );
   }
   canActivate(){
-    debugger;
     return this.loggedIn;
   }
 }

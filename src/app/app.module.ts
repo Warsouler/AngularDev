@@ -56,6 +56,7 @@ import { AuthorizationService } from './services/authorization.service';
 import { PathauthComponent } from './pathauth/pathauth.component';
 import { MyGuardService } from './services/my-guard.service';
 import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
+import { LoginfacebookComponent } from './loginfacebook/loginfacebook.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -113,7 +114,8 @@ export const firebaseConfig = {
     LoginComponent,
     RegisterComponent,
     PathauthComponent,
-    OnlyloggedpathComponent
+    OnlyloggedpathComponent,
+    LoginfacebookComponent
 
   ],
   imports: [

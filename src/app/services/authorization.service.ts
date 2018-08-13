@@ -3,6 +3,9 @@ import { EmailValidator } from '@angular/forms';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Router } from '@angular/router';
 
+// aca empezamos para loguearse con facebook, importamos todo firebase
+import * as firebase from 'firebase/app'
+
 @Injectable({
   providedIn: 'root'
 })
@@ -61,6 +64,21 @@ export class AuthorizationService {
   public logout(){
     this.angularFireAuth.auth.signOut();
     this.router.navigate(['linkiff']);
+  }
+  
+  public facebookLogin(){
+    // mandamos a firebase a la funcion signinwithpopup una instancia nueva del proveedor de facebook
+    this.angularFireAuth.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
+    .then((result)=>{
+      alert('Usuario loggeado con Facebook!!')
+      console.log(result);
+    })
+    .catch ((error)=>{
+      alert("Error");
+      console.log(error);
+    })
+    
+    ;
   }
 
 }

@@ -27,7 +27,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PathauthComponent } from './pathauth/pathauth.component';
 import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { LoginfacebookComponent } from './loginfacebook/loginfacebook.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -78,7 +78,7 @@ export const appRoutes: Routes = [
 // ademas del componente acá ponemos el guard con canActivate, que no dejara pasar a los no logueados
 // y tampoco auque estes logueado si queres acceder por ruta.
 { path: 'linkolpc', component: OnlyloggedpathComponent,canActivate:[MyGuardService]},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linklfb', component: LoginfacebookComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

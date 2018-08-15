@@ -28,7 +28,7 @@ import { RegisterComponent } from './register/register.component';
 import { PathauthComponent } from './pathauth/pathauth.component';
 import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
 import { LoginfacebookComponent } from './loginfacebook/loginfacebook.component';
-// import { DirattrComponent } from './dirattr/dirattr.component';
+import { TypeaheadComponent } from './typeahead/typeahead.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
 // import { DirattrComponent } from './dirattr/dirattr.component';
@@ -79,7 +79,7 @@ export const appRoutes: Routes = [
 // y tampoco auque estes logueado si queres acceder por ruta.
 { path: 'linkolpc', component: OnlyloggedpathComponent,canActivate:[MyGuardService]},
 { path: 'linklfb', component: LoginfacebookComponent},
-// { path: 'linkngsw', component: NgswitchComponent},
+{ path: 'linkth', component: TypeaheadComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},
 // { path: 'linkngsw', component: NgswitchComponent},

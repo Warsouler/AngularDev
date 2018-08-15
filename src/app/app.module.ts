@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
@@ -57,6 +57,7 @@ import { PathauthComponent } from './pathauth/pathauth.component';
 import { MyGuardService } from './services/my-guard.service';
 import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
 import { LoginfacebookComponent } from './loginfacebook/loginfacebook.component';
+import { TypeaheadComponent } from './typeahead/typeahead.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -115,7 +116,8 @@ export const firebaseConfig = {
     RegisterComponent,
     PathauthComponent,
     OnlyloggedpathComponent,
-    LoginfacebookComponent
+    LoginfacebookComponent,
+    TypeaheadComponent
 
   ],
   imports: [
@@ -133,7 +135,9 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     // declaramos el modulo para las animaciones
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    // importamos reactjs para cuando usamos observables
+    ReactiveFormsModule
 
 
   ],

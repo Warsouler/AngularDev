@@ -1,0 +1,6 @@
+<ul>
+  <li *ngIf="loggedIn">Estoy logueado</li>
+  
+  <li *ngIf="!loggedIn">No estoy logueado</li>
+  <a *ngIf="loggedIn" (click)="logout()">Desloguearse</a>
+</ul>

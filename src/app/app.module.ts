@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
@@ -53,6 +53,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthorizationService } from './services/authorization.service';
+import { PathauthComponent } from './pathauth/pathauth.component';
+import { MyGuardService } from './services/my-guard.service';
+import { OnlyloggedpathComponent } from './onlyloggedpath/onlyloggedpath.component';
+import { LoginfacebookComponent } from './loginfacebook/loginfacebook.component';
+import { TypeaheadComponent } from './typeahead/typeahead.component';
 
 // Constante de firebase la configuracion seria
 export const firebaseConfig = {
@@ -108,7 +113,11 @@ export const firebaseConfig = {
     LinkifystrPipe,
     AnimationsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PathauthComponent,
+    OnlyloggedpathComponent,
+    LoginfacebookComponent,
+    TypeaheadComponent
 
   ],
   imports: [
@@ -126,12 +135,14 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     // declaramos el modulo para las animaciones
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    // importamos reactjs para cuando usamos observables
+    ReactiveFormsModule
 
 
   ],
   // Aca en providers ponemos los servicios
-  providers: [LugaresService,CoordService,AuthorizationService],
+  providers: [LugaresService,CoordService,AuthorizationService,MyGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

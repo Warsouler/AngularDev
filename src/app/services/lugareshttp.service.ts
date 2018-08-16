@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase } from '../../../node_modules/angularfire2/database';
-import { Http, Headers } from '../../../node_modules/@angular/http';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Http, Headers } from '@angular/http';
 
 @Injectable({
   providedIn: 'root'

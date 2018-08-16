@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase } from '../../../node_modules/angularfire2/database';
-import { Http,Headers } from '../../../node_modules/@angular/http';
-import { TemplateBindingParseResult } from '../../../node_modules/@angular/compiler';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Http,Headers } from '@angular/http';
+import { TemplateBindingParseResult } from '@angular/compiler';
 // Como no vamos a importar un componente sino una operación especifica usamos este tipo de import
 // import 'rxjs/add/operator/map';
 import {map} from 'rxjs/operators';

@@ -1,7 +1,7 @@
 // Creamos nuestro pipe, importamos pipe y pipe transform
 // luego tambien importamos la libreria linkifyjs que instalamos con npm install linkifyjs
 
-import { Pipe, PipeTransform } from "../../../node_modules/@angular/core";
+import { Pipe, PipeTransform } from "@angular/core";
 import linkifyStr from 'linkifyjs/string';
 // le declaramos un nombre que es el que se usa en el código html o ts
 @Pipe({name:'linkifystr'})

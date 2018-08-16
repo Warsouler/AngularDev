@@ -22,6 +22,35 @@ export class AuthorizationService {
   //   ".read": "auth =!null",
     // ".write": "auth =!null"
   public login=(email,password) => {
+    // this.angularFireAuth.auth.setPersistence("local").then(function() {
+    //   this.angularFireAuth.auth.signInWithEmailAndPassword(email,password).then((response)=>{
+    //     // alert("Usuario logueado correctamente");
+    //     var user = this.angularFireAuth.auth.currentUser;
+    //     console.log(user.displayName);
+    //     console.log(user.email);
+    // console.log(user.photoURL);
+    // console.log(user.emailVerified);
+    //   console.log(user.uid);
+    //     console.log(response);
+  
+    //     console.log(user.getIdToken(true));
+    //   })
+    //   .catch((error)=>{
+    //     alert("Ha ocurrido un error");
+    //     console.log(error);
+    //   })
+      
+    // })
+    // .catch(function(error) {
+    //   // Handle Errors here.
+    //   debugger;
+    //   var errorCode = error.code;
+    //   var errorMessage = error.message;
+    //   console.log(error);
+    // });
+    debugger;
+    this.angularFireAuth.auth.setPersistence("local");
+
     this.angularFireAuth.auth.signInWithEmailAndPassword(email,password).then((response)=>{
       // alert("Usuario logueado correctamente");
       var user = this.angularFireAuth.auth.currentUser;
@@ -32,7 +61,7 @@ export class AuthorizationService {
     console.log(user.uid);
       console.log(response);
 
-      console.log(user.getIdToken());
+      console.log(user.getIdToken(true));
     })
     .catch((error)=>{
       alert("Ha ocurrido un error");
